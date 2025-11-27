@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio digital, blog kreatif, komunitas, dan toko produk digital untuk menampilkan karya terbaik dan membuka kolaborasi.">
+    <meta name="keywords"
+        content="portofolio, kreator, blog, tutorial, desain, coding, komunitas, toko digital, jasa kreatif">
+    <meta name="author" content="Nama Kreator">
+    <title>Studio Kreatif | Portofolio & Komunitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Nama Kreator",
+            "url": "https://example.com",
+            "sameAs": [
+                "https://www.instagram.com/username",
+                "https://www.youtube.com/@username"
+            ],
+            "jobTitle": "Content Creator & Digital Designer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Studio Riza"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="hero" id="home">
+        <nav class="nav">
+            <div class="logo">Studio<span>Kreatif</span></div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#interactive">Interaktif</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#store">Toko</a></li>
+                <li><a href="#social">Sosial</a></li>
+            </ul>
+            <a class="nav-cta" href="#portfolio">Lihat Karya</a>
+        </nav>
+        <div class="hero-content">
+            <div>
+                <p class="eyebrow">Content Creator · Desain · Storytelling</p>
+                <h1>Mengemas cerita digital dan produk kreatif yang berdampak.</h1>
+                <p class="lead">
+                    Saya membantu brand dan komunitas bercerita lewat artikel, video, desain interaktif, sekaligus menyediakan
+                    produk digital yang siap pakai.
+                </p>
+                <div class="hero-cta">
+                    <a class="btn primary" href="#portfolio">Lihat Karya Saya</a>
+                    <a class="btn secondary" href="#contact">Gabung Komunitas</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+                    alt="Foto kreator" loading="lazy">
+                <div class="badge">
+                    <p>15+ proyek kolaborasi · 5 kampanye komunitas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio" id="portfolio">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Portofolio Pilihan</p>
+                    <h2>Karya lintas media yang paling beresonansi.</h2>
+                </div>
+                <div class="filters" role="tablist">
+                    <button class="filter active" data-filter="all">Semua</button>
+                    <button class="filter" data-filter="desain">Desain</button>
+                    <button class="filter" data-filter="coding">Coding</button>
+                    <button class="filter" data-filter="tulisan">Tulisan</button>
+                    <button class="filter" data-filter="video">Video</button>
+                </div>
+            </div>
+            <div class="portfolio-grid">
+                <article class="card" data-category="desain">
+                    <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+                        alt="Branding kit" loading="lazy">
+                    <div>
+                        <p class="tag">Desain</p>
+                        <h3>Brand Kit untuk Startup Edukasi</h3>
+                        <p>Pengembangan identitas visual, guideline warna, dan layout kit promo.</p>
+                    </div>
+                </article>
+                <article class="card" data-category="coding">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                        alt="Dashboard coding" loading="lazy">
+                    <div>
+                        <p class="tag">Coding</p>
+                        <h3>Dashboard Komunitas Tekno</h3>
+                        <p>Platform membership dengan analitik event real-time dan integrasi newsletter.</p>
+                    </div>
+                </article>
+                <article class="card" data-category="tulisan">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=80"
+                        alt="Artikel blog" loading="lazy">
+                    <div>
+                        <p class="tag">Tulisan</p>
+                        <h3>Seri Artikel Growth Mindset</h3>
+                        <p>Tutorial berjenjang untuk kreator pemula yang ingin konsisten berkarya.</p>
+                    </div>
+                </article>
+                <article class="card" data-category="video">
+                    <img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?auto=format&fit=crop&w=900&q=80"
+                        alt="Video storytelling" loading="lazy">
+                    <div>
+                        <p class="tag">Video</p>
+                        <h3>Mini Doc: Cerita Komunitas Lokal</h3>
+                        <p>Produksi, scripting, dan distribusi video storytelling berdurasi 7 menit.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Blog & Tutorial</p>
+                    <h2>Insight praktis yang bisa langsung dieksekusi.</h2>
+                </div>
+                <a class="text-link" href="#">Lihat Semua Artikel →</a>
+            </div>
+            <div class="blog-grid">
+                <article class="card">
+                    <p class="tag">Tutorial</p>
+                    <h3>Merancang Landing Page yang Mengonversi</h3>
+                    <p>Kerangka copywriting + layout yang memicu aksi dalam 5 langkah.</p>
+                    <a href="#" class="text-link">Baca selengkapnya</a>
+                </article>
+                <article class="card">
+                    <p class="tag">Insight</p>
+                    <h3>Membangun Komunitas Digital yang Hangat</h3>
+                    <p>Paduan forum, newsletter, dan ritual mingguan untuk menjaga engagement.</p>
+                    <a href="#" class="text-link">Baca selengkapnya</a>
+                </article>
+                <article class="card">
+                    <p class="tag">Personal</p>
+                    <h3>Belajar Storytelling dari Proses Berkarya</h3>
+                    <p>Refleksi perjalanan kreatif dan bagaimana memetakan niche otentik.</p>
+                    <a href="#" class="text-link">Baca selengkapnya</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="principles" id="principles">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Strategi Platform</p>
+                    <h2>Konsistensi visual, interaksi audiens, dan distribusi konten.</h2>
+                </div>
+            </div>
+            <div class="principles-grid">
+                <article class="card principle">
+                    <h3>Konsistensi Visual</h3>
+                    <p>Warna neon gelap, tipografi Space Grotesk & Inter, dan logo StudioKreatif memastikan identitas tetap melekat di tiap halaman.</p>
+                </article>
+                <article class="card principle">
+                    <h3>Interaktif</h3>
+                    <p>Filter portofolio, form newsletter, dan polling cepat memberi ruang bagi audiens untuk terlibat aktif.</p>
+                </article>
+                <article class="card principle">
+                    <h3>Monetisasi</h3>
+                    <p>Produk digital, membership komunitas premium, serta opsi donasi transparan membuka banyak jalur pemasukan.</p>
+                </article>
+                <article class="card principle">
+                    <h3>SEO & Sosial</h3>
+                    <p>Meta teroptimasi + integrasi Instagram, YouTube, dan TikTok membantu distribusi organik lintas kanal.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80"
+                    alt="Foto profesional" loading="lazy">
+                <div>
+                    <p class="eyebrow">Tentang Saya</p>
+                    <h2>Berawal dari jurnal pribadi, berkembang jadi studio kolaboratif.</h2>
+                    <p>
+                        Saya adalah kreator multidisiplin yang menggabungkan desain, coding, dan storytelling untuk membantu brand
+                        tampil relevan. Selama lima tahun terakhir, saya bekerja dengan komunitas belajar, startup edukasi, dan
+                        kreator independen.
+                    </p>
+                    <div class="about-meta">
+                        <div>
+                            <p class="stat">120+</p>
+                            <p>Artikel & video</p>
+                        </div>
+                        <div>
+                            <p class="stat">30</p>
+                            <p>Klien & kolaborator</p>
+                        </div>
+                        <div>
+                            <p class="stat">12k</p>
+                            <p>Subscriber newsletter</p>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a class="btn primary" href="#contact">Buka Kolaborasi</a>
+                        <a class="btn ghost" href="mailto:hallo@studiokreatif.com" target="_blank" rel="noopener">Email Saya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <div>
+                <p class="eyebrow">Komunitas Kreator</p>
+                <h2>Bangun jaringan belajar yang suportif.</h2>
+                <p>
+                    Gabung di komunitas privat untuk berdiskusi, mendapatkan template eksklusif, dan mengikuti sesi live
+                    mentoring tiap bulan.
+                </p>
+                <ul class="community-benefits">
+                    <li>Forum komunitas dengan thread komentar mingguan</li>
+                    <li>Polling topik konten agar subscriber ikut menentukan agenda</li>
+                    <li>Sistem membership & donasi untuk mendukung kreator</li>
+                </ul>
+            </div>
+            <form class="newsletter" id="newsletter-form">
+                <label for="newsletter-email">Masukkan email untuk mendapatkan undangan:</label>
+                <div class="form-row">
+                    <input type="email" id="newsletter-email" placeholder="nama@email.com" required>
+                    <button type="submit" class="btn primary">Gabung</button>
+                </div>
+                <p class="form-note">Kami tidak akan mengirim spam. Batalkan kapan saja.</p>
+            </form>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Kontak & Kolaborasi</p>
+                    <h2>Siap diskusi proyek, workshop, atau campaign bersama.</h2>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" placeholder="Nama lengkap" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@domain.com" required>
+
+                    <label for="message">Detail kebutuhan</label>
+                    <textarea id="message" rows="4" placeholder="Ceritakan kebutuhan project atau kolaborasi" required></textarea>
+
+                    <button type="submit" class="btn primary full">Kirim Pesan</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Email & WhatsApp</h3>
+                        <p>Email: <a href="mailto:hallo@studiokreatif.com">hallo@studiokreatif.com</a></p>
+                        <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a></p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Kolaborasi yang dibuka</h3>
+                        <ul>
+                            <li>Desain brand & UI</li>
+                            <li>Produksi konten edukasi</li>
+                            <li>Storytelling campaign</li>
+                            <li>Workshop & mentorship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive" id="interactive">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Ruang Interaktif</p>
+                    <h2>Polling cepat & komentar singkat untuk dengarkan audiens.</h2>
+                </div>
+                <a class="text-link" href="#blog">Baca & tinggalkan komentar →</a>
+            </div>
+            <div class="interactive-grid">
+                <form class="poll card" id="poll-form">
+                    <h3>Polling: Konten apa yang kamu tunggu?</h3>
+                    <label class="poll-option">
+                        <input type="radio" name="poll" value="tutorial" required>
+                        Tutorial step-by-step
+                    </label>
+                    <label class="poll-option">
+                        <input type="radio" name="poll" value="storytelling">
+                        Cerita / storytelling visual
+                    </label>
+                    <label class="poll-option">
+                        <input type="radio" name="poll" value="komunitas">
+                        Update komunitas & behind the scene
+                    </label>
+                    <button class="btn primary full" type="submit">Kirim Suara</button>
+                </form>
+                <article class="card comments">
+                    <h3>Komentar Komunitas</h3>
+                    <div class="comment">
+                        <p class="comment-author">Nadia · Member Pro</p>
+                        <p>“Tutorial desain + preset barunya mantap, menunggu sesi live berikutnya!”</p>
+                    </div>
+                    <div class="comment">
+                        <p class="comment-author">Rafi · Storyteller</p>
+                        <p>“Suka dengan breakdown strategi multi-platform, relate banget buat kreator kecil.”</p>
+                    </div>
+                    <p class="form-note">Komentar lengkap tersedia di forum komunitas setelah registrasi.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="store" id="store">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Toko Digital</p>
+                    <h2>Produk digital siap pakai untuk mendukung kontenmu.</h2>
+                </div>
+                <a class="text-link" href="#">Lihat semua produk →</a>
+            </div>
+            <div class="store-grid">
+                <article class="card product">
+                    <h3>Template Notion Konten</h3>
+                    <p>Dashboard editorial + tracker sosial media.</p>
+                    <p class="price">Rp199.000</p>
+                    <div class="product-cta">
+                        <a class="btn secondary small" href="#">Preview</a>
+                        <a class="btn primary small" href="#">Beli via PayPal</a>
+                    </div>
+                </article>
+                <article class="card product">
+                    <h3>Preset Lightroom “Sunrise”</h3>
+                    <p>3 preset mobile + panduan instalasi.</p>
+                    <p class="price">Rp89.000</p>
+                    <div class="product-cta">
+                        <a class="btn secondary small" href="#">Preview</a>
+                        <a class="btn primary small" href="#">Beli via Midtrans</a>
+                    </div>
+                </article>
+                <article class="card product">
+                    <h3>E-book Storytelling Sosial Media</h3>
+                    <p>Framework storytelling + studi kasus.</p>
+                    <p class="price">Rp149.000</p>
+                    <div class="product-cta">
+                        <a class="btn secondary small" href="#">Preview</a>
+                        <a class="btn primary small" href="#">Tokopedia</a>
+                    </div>
+                </article>
+                <article class="card product">
+                    <h3>Membership Komunitas Pro</h3>
+                    <p>Akses forum privat, template eksklusif, dan Q&A bulanan.</p>
+                    <p class="price">Rp120.000 / bulan</p>
+                    <div class="product-cta">
+                        <a class="btn secondary small" href="#">Detail Benefit</a>
+                        <a class="btn primary small" href="#">Langganan</a>
+                    </div>
+                </article>
+                <article class="card product">
+                    <h3>Support Donasi Kreator</h3>
+                    <p>Bantu produksi konten gratis lewat donasi sekali atau rutin.</p>
+                    <p class="price">Mulai Rp25.000</p>
+                    <div class="product-cta">
+                        <a class="btn secondary small" href="#">Ko-fi</a>
+                        <a class="btn primary small" href="#">Saweria</a>
+                    </div>
+                </article>
+            </div>
+            <p class="store-note">
+                Integrasi pembayaran dapat disesuaikan dengan PayPal, Midtrans, atau marketplace lokal favoritmu.
+            </p>
+        </section>
+
+        <section class="social-hub" id="social">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">SEO & Sosial Media</p>
+                    <h2>Optimasi mesin pencari + distribusi lintas platform.</h2>
+                </div>
+            </div>
+            <div class="social-grid">
+                <article class="card social-card">
+                    <h3>Instagram</h3>
+                    <p>Micro storytelling dan carousel edukatif 3x seminggu.</p>
+                    <a class="btn secondary small" href="https://www.instagram.com/username" target="_blank" rel="noopener">Follow IG</a>
+                </article>
+                <article class="card social-card">
+                    <h3>YouTube</h3>
+                    <p>Video tutorial dan dokumenter pendek dua minggu sekali.</p>
+                    <a class="btn secondary small" href="https://www.youtube.com/@username" target="_blank" rel="noopener">Subscribe</a>
+                </article>
+                <article class="card social-card">
+                    <h3>TikTok</h3>
+                    <p>Tips cepat 60 detik dan behind the scene produksi konten.</p>
+                    <a class="btn secondary small" href="https://www.tiktok.com/@username" target="_blank" rel="noopener">Ikuti TikTok</a>
+                </article>
+                <article class="card social-card">
+                    <h3>SEO Playbook</h3>
+                    <p>Riset kata kunci, internal link antar artikel, dan snippet FAQ.</p>
+                    <a class="btn secondary small" href="#blog">Lihat implementasi</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Studio Kreatif. Semua hak cipta.</p>
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+            <a href="#newsletter-form">Newsletter</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
+
+
